@@ -24,7 +24,7 @@ import org.springframework.web.bind.annotation.*;
 import javax.servlet.http.HttpServletRequest;
 import java.util.List;
 import java.util.Optional;
-
+@RequestMapping("/employees")
 @RestController
 public class EmployeeController {
 
@@ -36,7 +36,7 @@ public class EmployeeController {
     private AuthenticationManager authenticationManager;
 
     @Operation(summary = "Authenticating the User")
-    @PostMapping("/authenticate")
+    @PostMapping("/public/authenticate")
     public String generateToken(@RequestBody LoginDto loginDto) throws Exception {
         try {
             authenticationManager.authenticate(new UsernamePasswordAuthenticationToken(loginDto.getEmail(),loginDto.getPassword())
@@ -47,7 +47,7 @@ public class EmployeeController {
         return new String("token:" + jwtUtil.generateToken(loginDto.getEmail()));
     }
 
-    @PostMapping("/public/employeesignup")
+    @PostMapping("/public/signup")
     public ResponseEntity<String> employeeSignUp(@RequestBody SignUpDto signUpDto) throws Exception {
 
         employeeService.employeSignUp(signUpDto);
