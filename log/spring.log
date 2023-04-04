@@ -1,77 +1,68 @@
-2023-03-30 17:39:58.327  INFO 14737 --- [main] com.pws.employees.EmployeesApplication   : Starting EmployeesApplication using Java 19.0.2 on pwa52 with PID 14737 (/home/user/Downloads/employees/target/classes started by user in /home/user/Downloads/employees)
-2023-03-30 17:39:58.337  INFO 14737 --- [main] com.pws.employees.EmployeesApplication   : No active profile set, falling back to 1 default profile: "default"
-2023-03-30 17:39:59.795  INFO 14737 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
-2023-03-30 17:39:59.922  INFO 14737 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 113 ms. Found 7 JPA repository interfaces.
-2023-03-30 17:40:00.839  INFO 14737 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8081 (http)
-2023-03-30 17:40:00.850  INFO 14737 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
-2023-03-30 17:40:00.851  INFO 14737 --- [main] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.71]
-2023-03-30 17:40:00.986  INFO 14737 --- [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
-2023-03-30 17:40:00.987  INFO 14737 --- [main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 2495 ms
-2023-03-30 17:40:01.293  INFO 14737 --- [main] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
-2023-03-30 17:40:01.353  INFO 14737 --- [main] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 5.6.14.Final
-2023-03-30 17:40:01.598  INFO 14737 --- [main] o.hibernate.annotations.common.Version   : HCANN000001: Hibernate Commons Annotations {5.1.2.Final}
-2023-03-30 17:40:01.761  INFO 14737 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
-2023-03-30 17:40:02.159  INFO 14737 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
-2023-03-30 17:40:02.186  INFO 14737 --- [main] org.hibernate.dialect.Dialect            : HHH000400: Using dialect: org.hibernate.dialect.MySQL5Dialect
-2023-03-30 17:40:03.773  INFO 14737 --- [main] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
-2023-03-30 17:40:03.782  INFO 14737 --- [main] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
-2023-03-30 17:40:05.014  WARN 14737 --- [main] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
-2023-03-30 17:40:05.525  WARN 14737 --- [main] o.s.s.c.a.web.builders.WebSecurity       : You are asking Spring Security to ignore Ant [pattern='/api/**']. This is not recommended -- please use permitAll via HttpSecurity#authorizeHttpRequests instead.
-2023-03-30 17:40:05.526  INFO 14737 --- [main] o.s.s.web.DefaultSecurityFilterChain     : Will not secure Ant [pattern='/api/**']
-2023-03-30 17:40:05.527  WARN 14737 --- [main] o.s.s.c.a.web.builders.WebSecurity       : You are asking Spring Security to ignore Ant [pattern='/**', OPTIONS]. This is not recommended -- please use permitAll via HttpSecurity#authorizeHttpRequests instead.
-2023-03-30 17:40:05.528  INFO 14737 --- [main] o.s.s.web.DefaultSecurityFilterChain     : Will not secure Ant [pattern='/**', OPTIONS]
-2023-03-30 17:40:05.528  WARN 14737 --- [main] o.s.s.c.a.web.builders.WebSecurity       : You are asking Spring Security to ignore Ant [pattern='/**/*.{js,html,css}']. This is not recommended -- please use permitAll via HttpSecurity#authorizeHttpRequests instead.
-2023-03-30 17:40:05.528  INFO 14737 --- [main] o.s.s.web.DefaultSecurityFilterChain     : Will not secure Ant [pattern='/**/*.{js,html,css}']
-2023-03-30 17:40:05.565  INFO 14737 --- [main] o.s.s.web.DefaultSecurityFilterChain     : Will secure any request with [org.springframework.security.web.session.DisableEncodeUrlFilter@53fd59d4, org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@43c3354, org.springframework.security.web.context.SecurityContextPersistenceFilter@15ca7322, org.springframework.security.web.header.HeaderWriterFilter@7ff7e353, org.springframework.security.web.authentication.logout.LogoutFilter@3180131e, com.pws.employees.jwtconfiguration.JwtFilter@7135e8cd, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@28200d43, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@497c1d78, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@260fffec, org.springframework.security.web.session.SessionManagementFilter@20cf3ab3, org.springframework.security.web.access.ExceptionTranslationFilter@df04d12, org.springframework.security.web.access.intercept.FilterSecurityInterceptor@39a1e1e6]
-2023-03-30 17:40:05.748  INFO 14737 --- [main] o.s.b.a.w.s.WelcomePageHandlerMapping    : Adding welcome page: class path resource [static/index.html]
-2023-03-30 17:40:07.019  INFO 14737 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8081 (http) with context path ''
-2023-03-30 17:40:07.021  INFO 14737 --- [main] o.s.m.s.b.SimpleBrokerMessageHandler     : Starting...
-2023-03-30 17:40:07.022  INFO 14737 --- [main] o.s.m.s.b.SimpleBrokerMessageHandler     : BrokerAvailabilityEvent[available=true, SimpleBrokerMessageHandler [org.springframework.messaging.simp.broker.DefaultSubscriptionRegistry@2740585b]]
-2023-03-30 17:40:07.022  INFO 14737 --- [main] o.s.m.s.b.SimpleBrokerMessageHandler     : Started.
-2023-03-30 17:40:07.038  INFO 14737 --- [main] com.pws.employees.EmployeesApplication   : Started EmployeesApplication in 14.603 seconds (JVM running for 15.657)
-2023-03-30 17:41:05.324  INFO 14737 --- [MessageBroker-1] o.s.w.s.c.WebSocketMessageBrokerStats    : WebSocketSession[0 current WS(0)-HttpStream(0)-HttpPoll(0), 0 total, 0 closed abnormally (0 connect failure, 0 send limit, 0 transport error)], stompSubProtocol[processed CONNECT(0)-CONNECTED(0)-DISCONNECT(0)], stompBrokerRelay[null], inboundChannel[pool size = 0, active threads = 0, queued tasks = 0, completed tasks = 0], outboundChannel[pool size = 0, active threads = 0, queued tasks = 0, completed tasks = 0], sockJsScheduler[pool size = 1, active threads = 1, queued tasks = 0, completed tasks = 0]
-2023-03-30 17:53:37.392  INFO 14737 --- [SpringApplicationShutdownHook] o.s.m.s.b.SimpleBrokerMessageHandler     : Stopping...
-2023-03-30 17:53:37.393  INFO 14737 --- [SpringApplicationShutdownHook] o.s.m.s.b.SimpleBrokerMessageHandler     : BrokerAvailabilityEvent[available=false, SimpleBrokerMessageHandler [org.springframework.messaging.simp.broker.DefaultSubscriptionRegistry@2740585b]]
-2023-03-30 17:53:37.393  INFO 14737 --- [SpringApplicationShutdownHook] o.s.m.s.b.SimpleBrokerMessageHandler     : Stopped.
-2023-03-30 17:53:37.429  INFO 14737 --- [SpringApplicationShutdownHook] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
-2023-03-30 17:53:37.432  INFO 14737 --- [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
-2023-03-30 17:53:37.453  INFO 14737 --- [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
-2023-03-30 17:53:48.467  INFO 15020 --- [main] com.pws.employees.EmployeesApplication   : Starting EmployeesApplication using Java 19.0.2 on pwa52 with PID 15020 (/home/user/Downloads/employees/target/classes started by user in /home/user/Downloads/employees)
-2023-03-30 17:53:48.471  INFO 15020 --- [main] com.pws.employees.EmployeesApplication   : No active profile set, falling back to 1 default profile: "default"
-2023-03-30 17:53:49.927  INFO 15020 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
-2023-03-30 17:53:50.065  INFO 15020 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 124 ms. Found 7 JPA repository interfaces.
-2023-03-30 17:53:51.124  INFO 15020 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8081 (http)
-2023-03-30 17:53:51.145  INFO 15020 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
-2023-03-30 17:53:51.146  INFO 15020 --- [main] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.71]
-2023-03-30 17:53:51.297  INFO 15020 --- [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
-2023-03-30 17:53:51.297  INFO 15020 --- [main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 2640 ms
-2023-03-30 17:53:51.644  INFO 15020 --- [main] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
-2023-03-30 17:53:51.712  INFO 15020 --- [main] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 5.6.14.Final
-2023-03-30 17:53:51.929  INFO 15020 --- [main] o.hibernate.annotations.common.Version   : HCANN000001: Hibernate Commons Annotations {5.1.2.Final}
-2023-03-30 17:53:52.100  INFO 15020 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
-2023-03-30 17:53:52.483  INFO 15020 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
-2023-03-30 17:53:52.499  INFO 15020 --- [main] org.hibernate.dialect.Dialect            : HHH000400: Using dialect: org.hibernate.dialect.MySQL5Dialect
-2023-03-30 17:53:53.900  INFO 15020 --- [main] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
-2023-03-30 17:53:53.909  INFO 15020 --- [main] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
-2023-03-30 17:53:55.059  WARN 15020 --- [main] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
-2023-03-30 17:53:55.561  WARN 15020 --- [main] o.s.s.c.a.web.builders.WebSecurity       : You are asking Spring Security to ignore Ant [pattern='/api/**']. This is not recommended -- please use permitAll via HttpSecurity#authorizeHttpRequests instead.
-2023-03-30 17:53:55.562  INFO 15020 --- [main] o.s.s.web.DefaultSecurityFilterChain     : Will not secure Ant [pattern='/api/**']
-2023-03-30 17:53:55.563  WARN 15020 --- [main] o.s.s.c.a.web.builders.WebSecurity       : You are asking Spring Security to ignore Ant [pattern='/**', OPTIONS]. This is not recommended -- please use permitAll via HttpSecurity#authorizeHttpRequests instead.
-2023-03-30 17:53:55.563  INFO 15020 --- [main] o.s.s.web.DefaultSecurityFilterChain     : Will not secure Ant [pattern='/**', OPTIONS]
-2023-03-30 17:53:55.564  WARN 15020 --- [main] o.s.s.c.a.web.builders.WebSecurity       : You are asking Spring Security to ignore Ant [pattern='/**/*.{js,html,css}']. This is not recommended -- please use permitAll via HttpSecurity#authorizeHttpRequests instead.
-2023-03-30 17:53:55.564  INFO 15020 --- [main] o.s.s.web.DefaultSecurityFilterChain     : Will not secure Ant [pattern='/**/*.{js,html,css}']
-2023-03-30 17:53:55.605  INFO 15020 --- [main] o.s.s.web.DefaultSecurityFilterChain     : Will secure any request with [org.springframework.security.web.session.DisableEncodeUrlFilter@4779df3d, org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@32b8992e, org.springframework.security.web.context.SecurityContextPersistenceFilter@727de450, org.springframework.security.web.header.HeaderWriterFilter@4c678a1f, org.springframework.security.web.authentication.logout.LogoutFilter@5cb32140, com.pws.employees.jwtconfiguration.JwtFilter@72ce8a9b, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@7077ae9c, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@2604940, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@3ef7fb04, org.springframework.security.web.session.SessionManagementFilter@571903ff, org.springframework.security.web.access.ExceptionTranslationFilter@11fa11b2, org.springframework.security.web.access.intercept.FilterSecurityInterceptor@5f596a1a]
-2023-03-30 17:53:55.796  INFO 15020 --- [main] o.s.b.a.w.s.WelcomePageHandlerMapping    : Adding welcome page: class path resource [static/index.html]
-2023-03-30 17:53:57.118  INFO 15020 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8081 (http) with context path ''
-2023-03-30 17:53:57.123  WARN 15020 --- [main] ConfigServletWebServerApplicationContext : Exception encountered during context initialization - cancelling refresh attempt: org.springframework.context.ApplicationContextException: Failed to start bean 'subProtocolWebSocketHandler'; nested exception is java.lang.IllegalArgumentException: No handlers
-2023-03-30 17:53:57.132  INFO 15020 --- [main] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
-2023-03-30 17:53:57.135  INFO 15020 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
-2023-03-30 17:53:57.149  INFO 15020 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
-2023-03-30 17:53:57.153  INFO 15020 --- [main] o.apache.catalina.core.StandardService   : Stopping service [Tomcat]
-2023-03-30 17:53:57.173  INFO 15020 --- [main] ConditionEvaluationReportLoggingListener : 
+2023-04-04 11:49:15.367  INFO 16617 --- [main] com.pws.employees.EmployeesApplication   : Starting EmployeesApplication using Java 19.0.2 on pwa52 with PID 16617 (/home/user/Downloads/employees/target/classes started by user in /home/user/Downloads/employees)
+2023-04-04 11:49:15.382  INFO 16617 --- [main] com.pws.employees.EmployeesApplication   : No active profile set, falling back to 1 default profile: "default"
+2023-04-04 11:49:17.025  INFO 16617 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2023-04-04 11:49:17.254  INFO 16617 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 218 ms. Found 7 JPA repository interfaces.
+2023-04-04 11:49:17.801  INFO 16617 --- [main] o.s.cloud.context.scope.GenericScope     : BeanFactory id=a2957881-bf5b-3911-9335-af5ca7be2cca
+2023-04-04 11:49:18.432  INFO 16617 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8081 (http)
+2023-04-04 11:49:18.445  INFO 16617 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2023-04-04 11:49:18.445  INFO 16617 --- [main] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.71]
+2023-04-04 11:49:18.611  INFO 16617 --- [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2023-04-04 11:49:18.621  INFO 16617 --- [main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 3077 ms
+2023-04-04 11:49:18.891  INFO 16617 --- [main] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2023-04-04 11:49:18.969  INFO 16617 --- [main] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 5.6.14.Final
+2023-04-04 11:49:19.205  INFO 16617 --- [main] o.hibernate.annotations.common.Version   : HCANN000001: Hibernate Commons Annotations {5.1.2.Final}
+2023-04-04 11:49:19.319  INFO 16617 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2023-04-04 11:49:19.752  INFO 16617 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2023-04-04 11:49:19.768  INFO 16617 --- [main] org.hibernate.dialect.Dialect            : HHH000400: Using dialect: org.hibernate.dialect.MySQL5Dialect
+2023-04-04 11:49:21.337  INFO 16617 --- [main] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2023-04-04 11:49:21.349  INFO 16617 --- [main] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2023-04-04 11:49:22.526  WARN 16617 --- [main] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2023-04-04 11:49:22.970  WARN 16617 --- [main] o.s.s.c.a.web.builders.WebSecurity       : You are asking Spring Security to ignore Ant [pattern='/api/**']. This is not recommended -- please use permitAll via HttpSecurity#authorizeHttpRequests instead.
+2023-04-04 11:49:22.971  INFO 16617 --- [main] o.s.s.web.DefaultSecurityFilterChain     : Will not secure Ant [pattern='/api/**']
+2023-04-04 11:49:22.972  WARN 16617 --- [main] o.s.s.c.a.web.builders.WebSecurity       : You are asking Spring Security to ignore Ant [pattern='/**', OPTIONS]. This is not recommended -- please use permitAll via HttpSecurity#authorizeHttpRequests instead.
+2023-04-04 11:49:22.973  INFO 16617 --- [main] o.s.s.web.DefaultSecurityFilterChain     : Will not secure Ant [pattern='/**', OPTIONS]
+2023-04-04 11:49:22.973  WARN 16617 --- [main] o.s.s.c.a.web.builders.WebSecurity       : You are asking Spring Security to ignore Ant [pattern='/**/*.{js,html,css}']. This is not recommended -- please use permitAll via HttpSecurity#authorizeHttpRequests instead.
+2023-04-04 11:49:22.974  INFO 16617 --- [main] o.s.s.web.DefaultSecurityFilterChain     : Will not secure Ant [pattern='/**/*.{js,html,css}']
+2023-04-04 11:49:23.027  INFO 16617 --- [main] o.s.s.web.DefaultSecurityFilterChain     : Will secure any request with [org.springframework.security.web.session.DisableEncodeUrlFilter@51d41b97, org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@7fd3c38b, org.springframework.security.web.context.SecurityContextPersistenceFilter@2a5c115b, org.springframework.security.web.header.HeaderWriterFilter@3903cfc9, org.springframework.security.web.authentication.logout.LogoutFilter@13288174, com.pws.employees.jwtconfiguration.JwtFilter@50d91a0f, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@20f3291d, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@6c3627c, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@27260f9c, org.springframework.security.web.session.SessionManagementFilter@f9d8285, org.springframework.security.web.access.ExceptionTranslationFilter@69374e28, org.springframework.security.web.access.intercept.FilterSecurityInterceptor@6768dc74]
+2023-04-04 11:49:23.251  INFO 16617 --- [main] o.s.b.a.w.s.WelcomePageHandlerMapping    : Adding welcome page: class path resource [static/index.html]
+2023-04-04 11:49:25.728  INFO 16617 --- [main] o.s.cloud.commons.util.InetUtils         : Cannot determine local hostname
+2023-04-04 11:49:25.799  INFO 16617 --- [main] DiscoveryClientOptionalArgsConfiguration : Eureka HTTP Client uses RestTemplate.
+2023-04-04 11:49:26.863  INFO 16617 --- [main] o.s.cloud.commons.util.InetUtils         : Cannot determine local hostname
+2023-04-04 11:49:26.987  WARN 16617 --- [main] iguration$LoadBalancerCaffeineWarnLogger : Spring Cloud LoadBalancer is currently working with the default cache. While this cache implementation is useful for development and tests, it's recommended to use Caffeine cache in production.You can switch to using Caffeine cache, by adding it and org.springframework.cache.caffeine.CaffeineCacheManager to the classpath.
+2023-04-04 11:49:27.035  INFO 16617 --- [main] o.s.c.n.eureka.InstanceInfoFactory       : Setting initial instance status as: STARTING
+2023-04-04 11:49:27.232  INFO 16617 --- [main] com.netflix.discovery.DiscoveryClient    : Initializing Eureka in region us-east-1
+2023-04-04 11:49:27.237  INFO 16617 --- [main] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2023-04-04 11:49:27.262  INFO 16617 --- [main] com.netflix.discovery.DiscoveryClient    : Disable delta property : false
+2023-04-04 11:49:27.262  INFO 16617 --- [main] com.netflix.discovery.DiscoveryClient    : Single vip registry refresh property : null
+2023-04-04 11:49:27.262  INFO 16617 --- [main] com.netflix.discovery.DiscoveryClient    : Force full registry fetch : false
+2023-04-04 11:49:27.263  INFO 16617 --- [main] com.netflix.discovery.DiscoveryClient    : Application is null : false
+2023-04-04 11:49:27.263  INFO 16617 --- [main] com.netflix.discovery.DiscoveryClient    : Registered Applications size is zero : true
+2023-04-04 11:49:27.263  INFO 16617 --- [main] com.netflix.discovery.DiscoveryClient    : Application version is -1: true
+2023-04-04 11:49:27.263  INFO 16617 --- [main] com.netflix.discovery.DiscoveryClient    : Getting all instance registry info from the eureka server
+2023-04-04 11:49:27.718  INFO 16617 --- [main] com.netflix.discovery.DiscoveryClient    : The response status is 200
+2023-04-04 11:49:27.722  INFO 16617 --- [main] com.netflix.discovery.DiscoveryClient    : Starting heartbeat executor: renew interval is: 30
+2023-04-04 11:49:27.726  INFO 16617 --- [main] c.n.discovery.InstanceInfoReplicator     : InstanceInfoReplicator onDemand update allowed rate per min is 4
+2023-04-04 11:49:27.735  INFO 16617 --- [main] com.netflix.discovery.DiscoveryClient    : Discovery Client initialized at timestamp 1680589167733 with initial instances count: 1
+2023-04-04 11:49:27.738  INFO 16617 --- [main] o.s.c.n.e.s.EurekaServiceRegistry        : Registering application EMPLOYEES-SERVICE with eureka with status UP
+2023-04-04 11:49:27.739  INFO 16617 --- [main] com.netflix.discovery.DiscoveryClient    : Saw local status change event StatusChangeEvent [timestamp=1680589167739, current=UP, previous=STARTING]
+2023-04-04 11:49:27.741  INFO 16617 --- [DiscoveryClient-InstanceInfoReplicator-0] com.netflix.discovery.DiscoveryClient    : DiscoveryClient_EMPLOYEES-SERVICE/localhost:employees-service:8081: registering service...
+2023-04-04 11:49:27.782  INFO 16617 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8081 (http) with context path ''
+2023-04-04 11:49:27.784  INFO 16617 --- [main] .s.c.n.e.s.EurekaAutoServiceRegistration : Updating port to 8081
+2023-04-04 11:49:27.793  INFO 16617 --- [DiscoveryClient-InstanceInfoReplicator-0] com.netflix.discovery.DiscoveryClient    : DiscoveryClient_EMPLOYEES-SERVICE/localhost:employees-service:8081 - registration status: 204
+2023-04-04 11:49:28.785  INFO 16617 --- [main] o.s.cloud.commons.util.InetUtils         : Cannot determine local hostname
+2023-04-04 11:49:28.786  WARN 16617 --- [main] ConfigServletWebServerApplicationContext : Exception encountered during context initialization - cancelling refresh attempt: org.springframework.context.ApplicationContextException: Failed to start bean 'subProtocolWebSocketHandler'; nested exception is java.lang.IllegalArgumentException: No handlers
+2023-04-04 11:49:28.806  INFO 16617 --- [main] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2023-04-04 11:49:28.808  INFO 16617 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2023-04-04 11:49:28.820  INFO 16617 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+2023-04-04 11:49:28.821  INFO 16617 --- [main] com.netflix.discovery.DiscoveryClient    : Shutting down DiscoveryClient ...
+2023-04-04 11:49:31.826  INFO 16617 --- [main] com.netflix.discovery.DiscoveryClient    : Unregistering ...
+2023-04-04 11:49:31.835  INFO 16617 --- [main] com.netflix.discovery.DiscoveryClient    : DiscoveryClient_EMPLOYEES-SERVICE/localhost:employees-service:8081 - deregister  status: 200
+2023-04-04 11:49:31.844  INFO 16617 --- [main] com.netflix.discovery.DiscoveryClient    : Completed shut down of DiscoveryClient
+2023-04-04 11:49:31.848  INFO 16617 --- [main] o.apache.catalina.core.StandardService   : Stopping service [Tomcat]
+2023-04-04 11:49:31.875  INFO 16617 --- [main] ConditionEvaluationReportLoggingListener : 
 
 Error starting ApplicationContext. To display the conditions report re-run your application with 'debug' enabled.
-2023-03-30 17:53:57.204 ERROR 15020 --- [main] o.s.boot.SpringApplication               : Application run failed
+2023-04-04 11:49:31.897 ERROR 16617 --- [main] o.s.boot.SpringApplication               : Application run failed
 
 org.springframework.context.ApplicationContextException: Failed to start bean 'subProtocolWebSocketHandler'; nested exception is java.lang.IllegalArgumentException: No handlers
 	at org.springframework.context.support.DefaultLifecycleProcessor.doStart(DefaultLifecycleProcessor.java:181) ~[spring-context-5.3.25.jar:5.3.25]
@@ -89,10 +80,206 @@ org.springframework.context.ApplicationContextException: Failed to start bean 's
 	at org.springframework.boot.SpringApplication.run(SpringApplication.java:307) ~[spring-boot-2.7.8.jar:2.7.8]
 	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1303) ~[spring-boot-2.7.8.jar:2.7.8]
 	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1292) ~[spring-boot-2.7.8.jar:2.7.8]
-	at com.pws.employees.EmployeesApplication.main(EmployeesApplication.java:20) ~[classes/:na]
+	at com.pws.employees.EmployeesApplication.main(EmployeesApplication.java:21) ~[classes/:na]
 Caused by: java.lang.IllegalArgumentException: No handlers
 	at org.springframework.util.Assert.isTrue(Assert.java:121) ~[spring-core-5.3.25.jar:5.3.25]
 	at org.springframework.web.socket.messaging.SubProtocolWebSocketHandler.start(SubProtocolWebSocketHandler.java:270) ~[spring-websocket-5.3.25.jar:5.3.25]
 	at org.springframework.context.support.DefaultLifecycleProcessor.doStart(DefaultLifecycleProcessor.java:178) ~[spring-context-5.3.25.jar:5.3.25]
 	... 15 common frames omitted
 
+2023-04-04 11:53:30.644  INFO 16873 --- [main] com.pws.employees.EmployeesApplication   : Starting EmployeesApplication using Java 19.0.2 on pwa52 with PID 16873 (/home/user/Downloads/employees/target/classes started by user in /home/user/Downloads/employees)
+2023-04-04 11:53:30.648  INFO 16873 --- [main] com.pws.employees.EmployeesApplication   : No active profile set, falling back to 1 default profile: "default"
+2023-04-04 11:53:33.363  INFO 16873 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2023-04-04 11:53:33.670  INFO 16873 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 294 ms. Found 7 JPA repository interfaces.
+2023-04-04 11:53:34.182  INFO 16873 --- [main] o.s.cloud.context.scope.GenericScope     : BeanFactory id=a2957881-bf5b-3911-9335-af5ca7be2cca
+2023-04-04 11:53:34.923  INFO 16873 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8081 (http)
+2023-04-04 11:53:34.936  INFO 16873 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2023-04-04 11:53:34.937  INFO 16873 --- [main] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.71]
+2023-04-04 11:53:35.136  INFO 16873 --- [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2023-04-04 11:53:35.140  INFO 16873 --- [main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 4270 ms
+2023-04-04 11:53:35.742  INFO 16873 --- [main] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2023-04-04 11:53:35.936  INFO 16873 --- [main] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 5.6.14.Final
+2023-04-04 11:53:36.336  INFO 16873 --- [main] o.hibernate.annotations.common.Version   : HCANN000001: Hibernate Commons Annotations {5.1.2.Final}
+2023-04-04 11:53:36.553  INFO 16873 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2023-04-04 11:53:37.106  INFO 16873 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2023-04-04 11:53:37.129  INFO 16873 --- [main] org.hibernate.dialect.Dialect            : HHH000400: Using dialect: org.hibernate.dialect.MySQL5Dialect
+2023-04-04 11:53:38.801  INFO 16873 --- [main] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2023-04-04 11:53:38.811  INFO 16873 --- [main] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2023-04-04 11:53:40.279  WARN 16873 --- [main] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2023-04-04 11:53:40.791  WARN 16873 --- [main] o.s.s.c.a.web.builders.WebSecurity       : You are asking Spring Security to ignore Ant [pattern='/api/**']. This is not recommended -- please use permitAll via HttpSecurity#authorizeHttpRequests instead.
+2023-04-04 11:53:40.791  INFO 16873 --- [main] o.s.s.web.DefaultSecurityFilterChain     : Will not secure Ant [pattern='/api/**']
+2023-04-04 11:53:40.792  WARN 16873 --- [main] o.s.s.c.a.web.builders.WebSecurity       : You are asking Spring Security to ignore Ant [pattern='/**', OPTIONS]. This is not recommended -- please use permitAll via HttpSecurity#authorizeHttpRequests instead.
+2023-04-04 11:53:40.792  INFO 16873 --- [main] o.s.s.web.DefaultSecurityFilterChain     : Will not secure Ant [pattern='/**', OPTIONS]
+2023-04-04 11:53:40.793  WARN 16873 --- [main] o.s.s.c.a.web.builders.WebSecurity       : You are asking Spring Security to ignore Ant [pattern='/**/*.{js,html,css}']. This is not recommended -- please use permitAll via HttpSecurity#authorizeHttpRequests instead.
+2023-04-04 11:53:40.793  INFO 16873 --- [main] o.s.s.web.DefaultSecurityFilterChain     : Will not secure Ant [pattern='/**/*.{js,html,css}']
+2023-04-04 11:53:40.827  INFO 16873 --- [main] o.s.s.web.DefaultSecurityFilterChain     : Will secure any request with [org.springframework.security.web.session.DisableEncodeUrlFilter@5da41d02, org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@17d837ab, org.springframework.security.web.context.SecurityContextPersistenceFilter@5cbebfba, org.springframework.security.web.header.HeaderWriterFilter@182469d0, org.springframework.security.web.authentication.logout.LogoutFilter@1254a3cd, com.pws.employees.jwtconfiguration.JwtFilter@52667676, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@58df2864, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@f9d8285, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@4e77f29e, org.springframework.security.web.session.SessionManagementFilter@288e50c1, org.springframework.security.web.access.ExceptionTranslationFilter@72321701, org.springframework.security.web.access.intercept.FilterSecurityInterceptor@32d3b965]
+2023-04-04 11:53:41.090  INFO 16873 --- [main] o.s.b.a.w.s.WelcomePageHandlerMapping    : Adding welcome page: class path resource [static/index.html]
+2023-04-04 11:53:43.848  INFO 16873 --- [main] o.s.cloud.commons.util.InetUtils         : Cannot determine local hostname
+2023-04-04 11:53:43.966  INFO 16873 --- [main] DiscoveryClientOptionalArgsConfiguration : Eureka HTTP Client uses RestTemplate.
+2023-04-04 11:53:45.091  INFO 16873 --- [main] o.s.cloud.commons.util.InetUtils         : Cannot determine local hostname
+2023-04-04 11:53:45.225  WARN 16873 --- [main] iguration$LoadBalancerCaffeineWarnLogger : Spring Cloud LoadBalancer is currently working with the default cache. While this cache implementation is useful for development and tests, it's recommended to use Caffeine cache in production.You can switch to using Caffeine cache, by adding it and org.springframework.cache.caffeine.CaffeineCacheManager to the classpath.
+2023-04-04 11:53:45.272  INFO 16873 --- [main] o.s.c.n.eureka.InstanceInfoFactory       : Setting initial instance status as: STARTING
+2023-04-04 11:53:45.552  INFO 16873 --- [main] com.netflix.discovery.DiscoveryClient    : Initializing Eureka in region us-east-1
+2023-04-04 11:53:45.562  INFO 16873 --- [main] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2023-04-04 11:53:45.606  INFO 16873 --- [main] com.netflix.discovery.DiscoveryClient    : Disable delta property : false
+2023-04-04 11:53:45.606  INFO 16873 --- [main] com.netflix.discovery.DiscoveryClient    : Single vip registry refresh property : null
+2023-04-04 11:53:45.607  INFO 16873 --- [main] com.netflix.discovery.DiscoveryClient    : Force full registry fetch : false
+2023-04-04 11:53:45.609  INFO 16873 --- [main] com.netflix.discovery.DiscoveryClient    : Application is null : false
+2023-04-04 11:53:45.609  INFO 16873 --- [main] com.netflix.discovery.DiscoveryClient    : Registered Applications size is zero : true
+2023-04-04 11:53:45.610  INFO 16873 --- [main] com.netflix.discovery.DiscoveryClient    : Application version is -1: true
+2023-04-04 11:53:45.611  INFO 16873 --- [main] com.netflix.discovery.DiscoveryClient    : Getting all instance registry info from the eureka server
+2023-04-04 11:53:46.105  INFO 16873 --- [main] com.netflix.discovery.DiscoveryClient    : The response status is 200
+2023-04-04 11:53:46.113  INFO 16873 --- [main] com.netflix.discovery.DiscoveryClient    : Starting heartbeat executor: renew interval is: 30
+2023-04-04 11:53:46.116  INFO 16873 --- [main] c.n.discovery.InstanceInfoReplicator     : InstanceInfoReplicator onDemand update allowed rate per min is 4
+2023-04-04 11:53:46.123  INFO 16873 --- [main] com.netflix.discovery.DiscoveryClient    : Discovery Client initialized at timestamp 1680589426122 with initial instances count: 1
+2023-04-04 11:53:46.126  INFO 16873 --- [main] o.s.c.n.e.s.EurekaServiceRegistry        : Registering application EMPLOYEES-SERVICE with eureka with status UP
+2023-04-04 11:53:46.127  INFO 16873 --- [main] com.netflix.discovery.DiscoveryClient    : Saw local status change event StatusChangeEvent [timestamp=1680589426127, current=UP, previous=STARTING]
+2023-04-04 11:53:46.129  INFO 16873 --- [DiscoveryClient-InstanceInfoReplicator-0] com.netflix.discovery.DiscoveryClient    : DiscoveryClient_EMPLOYEES-SERVICE/localhost:employees-service:8081: registering service...
+2023-04-04 11:53:46.181  INFO 16873 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8081 (http) with context path ''
+2023-04-04 11:53:46.183  INFO 16873 --- [main] .s.c.n.e.s.EurekaAutoServiceRegistration : Updating port to 8081
+2023-04-04 11:53:46.196  INFO 16873 --- [DiscoveryClient-InstanceInfoReplicator-0] com.netflix.discovery.DiscoveryClient    : DiscoveryClient_EMPLOYEES-SERVICE/localhost:employees-service:8081 - registration status: 204
+2023-04-04 11:53:47.184  INFO 16873 --- [main] o.s.cloud.commons.util.InetUtils         : Cannot determine local hostname
+2023-04-04 11:53:47.185  WARN 16873 --- [main] ConfigServletWebServerApplicationContext : Exception encountered during context initialization - cancelling refresh attempt: org.springframework.context.ApplicationContextException: Failed to start bean 'subProtocolWebSocketHandler'; nested exception is java.lang.IllegalArgumentException: No handlers
+2023-04-04 11:53:47.198  INFO 16873 --- [main] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2023-04-04 11:53:47.201  INFO 16873 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2023-04-04 11:53:47.213  INFO 16873 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+2023-04-04 11:53:47.214  INFO 16873 --- [main] com.netflix.discovery.DiscoveryClient    : Shutting down DiscoveryClient ...
+2023-04-04 11:53:50.219  INFO 16873 --- [main] com.netflix.discovery.DiscoveryClient    : Unregistering ...
+2023-04-04 11:53:50.229  INFO 16873 --- [main] com.netflix.discovery.DiscoveryClient    : DiscoveryClient_EMPLOYEES-SERVICE/localhost:employees-service:8081 - deregister  status: 200
+2023-04-04 11:53:50.237  INFO 16873 --- [main] com.netflix.discovery.DiscoveryClient    : Completed shut down of DiscoveryClient
+2023-04-04 11:53:50.241  INFO 16873 --- [main] o.apache.catalina.core.StandardService   : Stopping service [Tomcat]
+2023-04-04 11:53:50.260  INFO 16873 --- [main] ConditionEvaluationReportLoggingListener : 
+
+Error starting ApplicationContext. To display the conditions report re-run your application with 'debug' enabled.
+2023-04-04 11:53:50.281 ERROR 16873 --- [main] o.s.boot.SpringApplication               : Application run failed
+
+org.springframework.context.ApplicationContextException: Failed to start bean 'subProtocolWebSocketHandler'; nested exception is java.lang.IllegalArgumentException: No handlers
+	at org.springframework.context.support.DefaultLifecycleProcessor.doStart(DefaultLifecycleProcessor.java:181) ~[spring-context-5.3.25.jar:5.3.25]
+	at org.springframework.context.support.DefaultLifecycleProcessor.doStart(DefaultLifecycleProcessor.java:170) ~[spring-context-5.3.25.jar:5.3.25]
+	at org.springframework.context.support.DefaultLifecycleProcessor.access$200(DefaultLifecycleProcessor.java:54) ~[spring-context-5.3.25.jar:5.3.25]
+	at org.springframework.context.support.DefaultLifecycleProcessor$LifecycleGroup.start(DefaultLifecycleProcessor.java:356) ~[spring-context-5.3.25.jar:5.3.25]
+	at java.base/java.lang.Iterable.forEach(Iterable.java:75) ~[na:na]
+	at org.springframework.context.support.DefaultLifecycleProcessor.startBeans(DefaultLifecycleProcessor.java:155) ~[spring-context-5.3.25.jar:5.3.25]
+	at org.springframework.context.support.DefaultLifecycleProcessor.onRefresh(DefaultLifecycleProcessor.java:123) ~[spring-context-5.3.25.jar:5.3.25]
+	at org.springframework.context.support.AbstractApplicationContext.finishRefresh(AbstractApplicationContext.java:935) ~[spring-context-5.3.25.jar:5.3.25]
+	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:586) ~[spring-context-5.3.25.jar:5.3.25]
+	at org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext.refresh(ServletWebServerApplicationContext.java:147) ~[spring-boot-2.7.8.jar:2.7.8]
+	at org.springframework.boot.SpringApplication.refresh(SpringApplication.java:731) ~[spring-boot-2.7.8.jar:2.7.8]
+	at org.springframework.boot.SpringApplication.refreshContext(SpringApplication.java:408) ~[spring-boot-2.7.8.jar:2.7.8]
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:307) ~[spring-boot-2.7.8.jar:2.7.8]
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1303) ~[spring-boot-2.7.8.jar:2.7.8]
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1292) ~[spring-boot-2.7.8.jar:2.7.8]
+	at com.pws.employees.EmployeesApplication.main(EmployeesApplication.java:19) ~[classes/:na]
+Caused by: java.lang.IllegalArgumentException: No handlers
+	at org.springframework.util.Assert.isTrue(Assert.java:121) ~[spring-core-5.3.25.jar:5.3.25]
+	at org.springframework.web.socket.messaging.SubProtocolWebSocketHandler.start(SubProtocolWebSocketHandler.java:270) ~[spring-websocket-5.3.25.jar:5.3.25]
+	at org.springframework.context.support.DefaultLifecycleProcessor.doStart(DefaultLifecycleProcessor.java:178) ~[spring-context-5.3.25.jar:5.3.25]
+	... 15 common frames omitted
+
+2023-04-04 11:55:01.747  INFO 17076 --- [main] com.pws.employees.EmployeesApplication   : Starting EmployeesApplication using Java 19.0.2 on pwa52 with PID 17076 (/home/user/Downloads/employees/target/classes started by user in /home/user/Downloads/employees)
+2023-04-04 11:55:01.751  INFO 17076 --- [main] com.pws.employees.EmployeesApplication   : No active profile set, falling back to 1 default profile: "default"
+2023-04-04 11:55:03.655  INFO 17076 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2023-04-04 11:55:04.039  INFO 17076 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 367 ms. Found 7 JPA repository interfaces.
+2023-04-04 11:55:04.642  INFO 17076 --- [main] o.s.cloud.context.scope.GenericScope     : BeanFactory id=c451f5aa-39bb-35b8-9f7b-0ae13d2fad31
+2023-04-04 11:55:05.538  INFO 17076 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8081 (http)
+2023-04-04 11:55:05.555  INFO 17076 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2023-04-04 11:55:05.556  INFO 17076 --- [main] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.71]
+2023-04-04 11:55:05.807  INFO 17076 --- [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2023-04-04 11:55:05.808  INFO 17076 --- [main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 3855 ms
+2023-04-04 11:55:06.229  INFO 17076 --- [main] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2023-04-04 11:55:06.307  INFO 17076 --- [main] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 5.6.14.Final
+2023-04-04 11:55:06.600  INFO 17076 --- [main] o.hibernate.annotations.common.Version   : HCANN000001: Hibernate Commons Annotations {5.1.2.Final}
+2023-04-04 11:55:06.761  INFO 17076 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2023-04-04 11:55:07.332  INFO 17076 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2023-04-04 11:55:07.358  INFO 17076 --- [main] org.hibernate.dialect.Dialect            : HHH000400: Using dialect: org.hibernate.dialect.MySQL5Dialect
+2023-04-04 11:55:09.191  INFO 17076 --- [main] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2023-04-04 11:55:09.204  INFO 17076 --- [main] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2023-04-04 11:55:10.752  WARN 17076 --- [main] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2023-04-04 11:55:10.976  WARN 17076 --- [main] o.s.s.c.a.web.builders.WebSecurity       : You are asking Spring Security to ignore Ant [pattern='/api/**']. This is not recommended -- please use permitAll via HttpSecurity#authorizeHttpRequests instead.
+2023-04-04 11:55:10.977  INFO 17076 --- [main] o.s.s.web.DefaultSecurityFilterChain     : Will not secure Ant [pattern='/api/**']
+2023-04-04 11:55:10.979  WARN 17076 --- [main] o.s.s.c.a.web.builders.WebSecurity       : You are asking Spring Security to ignore Ant [pattern='/**', OPTIONS]. This is not recommended -- please use permitAll via HttpSecurity#authorizeHttpRequests instead.
+2023-04-04 11:55:10.979  INFO 17076 --- [main] o.s.s.web.DefaultSecurityFilterChain     : Will not secure Ant [pattern='/**', OPTIONS]
+2023-04-04 11:55:10.979  WARN 17076 --- [main] o.s.s.c.a.web.builders.WebSecurity       : You are asking Spring Security to ignore Ant [pattern='/**/*.{js,html,css}']. This is not recommended -- please use permitAll via HttpSecurity#authorizeHttpRequests instead.
+2023-04-04 11:55:10.980  INFO 17076 --- [main] o.s.s.web.DefaultSecurityFilterChain     : Will not secure Ant [pattern='/**/*.{js,html,css}']
+2023-04-04 11:55:11.035  INFO 17076 --- [main] o.s.s.web.DefaultSecurityFilterChain     : Will secure any request with [org.springframework.security.web.session.DisableEncodeUrlFilter@6abaa14b, org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@3b60be3, org.springframework.security.web.context.SecurityContextPersistenceFilter@6fd07a56, org.springframework.security.web.header.HeaderWriterFilter@202b5293, org.springframework.security.web.authentication.logout.LogoutFilter@47f8374, com.pws.employees.jwtconfiguration.JwtFilter@1d7d968c, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@45649467, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@35bf6dba, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@2f3565c0, org.springframework.security.web.session.SessionManagementFilter@3b38f032, org.springframework.security.web.access.ExceptionTranslationFilter@4cd079fe, org.springframework.security.web.access.intercept.FilterSecurityInterceptor@1259b2a5]
+2023-04-04 11:55:11.392  INFO 17076 --- [main] o.s.b.a.w.s.WelcomePageHandlerMapping    : Adding welcome page: class path resource [static/index.html]
+2023-04-04 11:55:14.197  INFO 17076 --- [main] o.s.cloud.commons.util.InetUtils         : Cannot determine local hostname
+2023-04-04 11:55:14.284  INFO 17076 --- [main] DiscoveryClientOptionalArgsConfiguration : Eureka HTTP Client uses RestTemplate.
+2023-04-04 11:55:15.370  INFO 17076 --- [main] o.s.cloud.commons.util.InetUtils         : Cannot determine local hostname
+2023-04-04 11:55:15.528  WARN 17076 --- [main] iguration$LoadBalancerCaffeineWarnLogger : Spring Cloud LoadBalancer is currently working with the default cache. While this cache implementation is useful for development and tests, it's recommended to use Caffeine cache in production.You can switch to using Caffeine cache, by adding it and org.springframework.cache.caffeine.CaffeineCacheManager to the classpath.
+2023-04-04 11:55:15.596  INFO 17076 --- [main] o.s.c.n.eureka.InstanceInfoFactory       : Setting initial instance status as: STARTING
+2023-04-04 11:55:15.861  INFO 17076 --- [main] com.netflix.discovery.DiscoveryClient    : Initializing Eureka in region us-east-1
+2023-04-04 11:55:15.868  INFO 17076 --- [main] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2023-04-04 11:55:15.906  INFO 17076 --- [main] com.netflix.discovery.DiscoveryClient    : Disable delta property : false
+2023-04-04 11:55:15.906  INFO 17076 --- [main] com.netflix.discovery.DiscoveryClient    : Single vip registry refresh property : null
+2023-04-04 11:55:15.907  INFO 17076 --- [main] com.netflix.discovery.DiscoveryClient    : Force full registry fetch : false
+2023-04-04 11:55:15.907  INFO 17076 --- [main] com.netflix.discovery.DiscoveryClient    : Application is null : false
+2023-04-04 11:55:15.907  INFO 17076 --- [main] com.netflix.discovery.DiscoveryClient    : Registered Applications size is zero : true
+2023-04-04 11:55:15.907  INFO 17076 --- [main] com.netflix.discovery.DiscoveryClient    : Application version is -1: true
+2023-04-04 11:55:15.907  INFO 17076 --- [main] com.netflix.discovery.DiscoveryClient    : Getting all instance registry info from the eureka server
+2023-04-04 11:55:16.442  INFO 17076 --- [main] com.netflix.discovery.DiscoveryClient    : The response status is 200
+2023-04-04 11:55:16.446  INFO 17076 --- [main] com.netflix.discovery.DiscoveryClient    : Starting heartbeat executor: renew interval is: 30
+2023-04-04 11:55:16.451  INFO 17076 --- [main] c.n.discovery.InstanceInfoReplicator     : InstanceInfoReplicator onDemand update allowed rate per min is 4
+2023-04-04 11:55:16.468  INFO 17076 --- [main] com.netflix.discovery.DiscoveryClient    : Discovery Client initialized at timestamp 1680589516464 with initial instances count: 1
+2023-04-04 11:55:16.473  INFO 17076 --- [main] o.s.c.n.e.s.EurekaServiceRegistry        : Registering application EMPLOYEES-SERVICE with eureka with status UP
+2023-04-04 11:55:16.474  INFO 17076 --- [main] com.netflix.discovery.DiscoveryClient    : Saw local status change event StatusChangeEvent [timestamp=1680589516474, current=UP, previous=STARTING]
+2023-04-04 11:55:16.476  INFO 17076 --- [DiscoveryClient-InstanceInfoReplicator-0] com.netflix.discovery.DiscoveryClient    : DiscoveryClient_EMPLOYEES-SERVICE/localhost:employees-service:8081: registering service...
+2023-04-04 11:55:16.524  INFO 17076 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8081 (http) with context path ''
+2023-04-04 11:55:16.526  INFO 17076 --- [main] .s.c.n.e.s.EurekaAutoServiceRegistration : Updating port to 8081
+2023-04-04 11:55:16.550  INFO 17076 --- [DiscoveryClient-InstanceInfoReplicator-0] com.netflix.discovery.DiscoveryClient    : DiscoveryClient_EMPLOYEES-SERVICE/localhost:employees-service:8081 - registration status: 204
+2023-04-04 11:55:17.528  INFO 17076 --- [main] o.s.cloud.commons.util.InetUtils         : Cannot determine local hostname
+2023-04-04 11:55:17.557  INFO 17076 --- [main] com.pws.employees.EmployeesApplication   : Started EmployeesApplication in 42.725 seconds (JVM running for 43.619)
+2023-04-04 12:00:15.910  INFO 17076 --- [AsyncResolver-bootstrap-executor-0] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2023-04-04 12:05:15.911  INFO 17076 --- [AsyncResolver-bootstrap-executor-0] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2023-04-04 12:10:15.913  INFO 17076 --- [AsyncResolver-bootstrap-executor-0] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2023-04-04 12:15:15.915  INFO 17076 --- [AsyncResolver-bootstrap-executor-0] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2023-04-04 12:20:15.915  INFO 17076 --- [AsyncResolver-bootstrap-executor-0] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2023-04-04 12:25:15.917  INFO 17076 --- [AsyncResolver-bootstrap-executor-0] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2023-04-04 12:30:15.918  INFO 17076 --- [AsyncResolver-bootstrap-executor-0] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2023-04-04 12:35:15.920  INFO 17076 --- [AsyncResolver-bootstrap-executor-0] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2023-04-04 12:40:15.921  INFO 17076 --- [AsyncResolver-bootstrap-executor-0] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2023-04-04 12:45:15.922  INFO 17076 --- [AsyncResolver-bootstrap-executor-0] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2023-04-04 12:50:15.922  INFO 17076 --- [AsyncResolver-bootstrap-executor-0] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2023-04-04 12:55:15.924  INFO 17076 --- [AsyncResolver-bootstrap-executor-0] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2023-04-04 13:00:15.925  INFO 17076 --- [AsyncResolver-bootstrap-executor-0] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2023-04-04 13:05:15.926  INFO 17076 --- [AsyncResolver-bootstrap-executor-0] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2023-04-04 13:10:15.927  INFO 17076 --- [AsyncResolver-bootstrap-executor-0] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2023-04-04 13:15:15.929  INFO 17076 --- [AsyncResolver-bootstrap-executor-0] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2023-04-04 13:20:15.930  INFO 17076 --- [AsyncResolver-bootstrap-executor-0] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2023-04-04 13:25:15.930  INFO 17076 --- [AsyncResolver-bootstrap-executor-0] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2023-04-04 13:30:15.931  INFO 17076 --- [AsyncResolver-bootstrap-executor-0] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2023-04-04 13:35:15.932  INFO 17076 --- [AsyncResolver-bootstrap-executor-0] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2023-04-04 13:40:15.933  INFO 17076 --- [AsyncResolver-bootstrap-executor-0] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2023-04-04 13:45:15.935  INFO 17076 --- [AsyncResolver-bootstrap-executor-0] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2023-04-04 13:50:15.936  INFO 17076 --- [AsyncResolver-bootstrap-executor-0] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2023-04-04 13:55:15.938  INFO 17076 --- [AsyncResolver-bootstrap-executor-0] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2023-04-04 14:00:15.939  INFO 17076 --- [AsyncResolver-bootstrap-executor-0] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2023-04-04 14:05:15.940  INFO 17076 --- [AsyncResolver-bootstrap-executor-0] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2023-04-04 14:10:15.942  INFO 17076 --- [AsyncResolver-bootstrap-executor-0] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2023-04-04 14:15:15.943  INFO 17076 --- [AsyncResolver-bootstrap-executor-0] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2023-04-04 14:20:15.944  INFO 17076 --- [AsyncResolver-bootstrap-executor-0] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2023-04-04 14:25:15.945  INFO 17076 --- [AsyncResolver-bootstrap-executor-0] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2023-04-04 14:30:15.947  INFO 17076 --- [AsyncResolver-bootstrap-executor-0] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2023-04-04 14:35:15.948  INFO 17076 --- [AsyncResolver-bootstrap-executor-0] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2023-04-04 14:40:15.949  INFO 17076 --- [AsyncResolver-bootstrap-executor-0] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2023-04-04 14:45:15.950  INFO 17076 --- [AsyncResolver-bootstrap-executor-0] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2023-04-04 14:50:15.951  INFO 17076 --- [AsyncResolver-bootstrap-executor-0] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2023-04-04 14:55:15.951  INFO 17076 --- [AsyncResolver-bootstrap-executor-0] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2023-04-04 15:00:15.953  INFO 17076 --- [AsyncResolver-bootstrap-executor-0] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2023-04-04 15:05:15.954  INFO 17076 --- [AsyncResolver-bootstrap-executor-0] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2023-04-04 15:10:15.955  INFO 17076 --- [AsyncResolver-bootstrap-executor-0] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2023-04-04 15:15:15.956  INFO 17076 --- [AsyncResolver-bootstrap-executor-0] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2023-04-04 15:20:15.957  INFO 17076 --- [AsyncResolver-bootstrap-executor-0] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2023-04-04 15:25:15.958  INFO 17076 --- [AsyncResolver-bootstrap-executor-0] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2023-04-04 15:30:15.959  INFO 17076 --- [AsyncResolver-bootstrap-executor-0] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2023-04-04 15:35:15.961  INFO 17076 --- [AsyncResolver-bootstrap-executor-0] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2023-04-04 15:40:15.962  INFO 17076 --- [AsyncResolver-bootstrap-executor-0] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2023-04-04 15:45:15.963  INFO 17076 --- [AsyncResolver-bootstrap-executor-0] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2023-04-04 15:50:15.964  INFO 17076 --- [AsyncResolver-bootstrap-executor-0] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2023-04-04 15:55:15.966  INFO 17076 --- [AsyncResolver-bootstrap-executor-0] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2023-04-04 16:00:15.967  INFO 17076 --- [AsyncResolver-bootstrap-executor-0] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2023-04-04 16:05:15.968  INFO 17076 --- [AsyncResolver-bootstrap-executor-0] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2023-04-04 16:10:15.969  INFO 17076 --- [AsyncResolver-bootstrap-executor-0] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2023-04-04 16:15:15.970  INFO 17076 --- [AsyncResolver-bootstrap-executor-0] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2023-04-04 16:20:15.971  INFO 17076 --- [AsyncResolver-bootstrap-executor-0] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2023-04-04 16:25:15.972  INFO 17076 --- [AsyncResolver-bootstrap-executor-0] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration

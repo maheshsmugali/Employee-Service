@@ -16,16 +16,11 @@ import org.springframework.security.config.http.SessionCreationPolicy;
 import org.springframework.security.crypto.bcrypt.BCryptPasswordEncoder;
 import org.springframework.security.crypto.password.PasswordEncoder;
 import org.springframework.security.web.authentication.UsernamePasswordAuthenticationFilter;
-import org.springframework.web.socket.config.annotation.EnableWebSocketMessageBroker;
-import org.springframework.web.socket.config.annotation.StompEndpointRegistry;
-import org.springframework.web.socket.config.annotation.WebSocketMessageBrokerConfigurer;
-
 import java.lang.annotation.Annotation;
 
 @Configuration
-@EnableWebSocketMessageBroker
 @EnableWebSecurity
-public class SecurityConfig extends WebSecurityConfigurerAdapter implements WebSocketMessageBrokerConfigurer {
+public class SecurityConfig extends WebSecurityConfigurerAdapter {
 
     @Autowired
     private UserDetailsServiceImpl userDetailsService;
@@ -50,7 +45,7 @@ public class SecurityConfig extends WebSecurityConfigurerAdapter implements WebS
 
     @Override
     protected void configure(HttpSecurity http) throws Exception {
-        http.csrf().disable().authorizeRequests().antMatchers("/*","/authenticate/**","/public/**","/swagger-ui/**","/v3/api-docs/**", "/configuration/**","/index","/webjars/**","/refres/autenticate","/logout/**","/topic/public","/javatechie/**","/chat.register","/chat.send")
+        http.csrf().disable().authorizeRequests().antMatchers("/*","/employees/public/**","/swagger-ui/**","/v3/api-docs/**", "/configuration/**","/index","/webjars/**","/refres/autenticate","/logout/**","/topic/public","/javatechie/**","/chat.register","/chat.send")
                 .permitAll().anyRequest().authenticated()
                 .and().exceptionHandling().and().sessionManagement()
                 .sessionCreationPolicy(SessionCreationPolicy.STATELESS);
